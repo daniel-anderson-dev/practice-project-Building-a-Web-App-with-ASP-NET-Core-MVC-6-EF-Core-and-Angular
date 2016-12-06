@@ -30,7 +30,7 @@ namespace TheWorld
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("<html><body>Don't do this.</body></html>");
             });
         }
     }
