@@ -1,25 +1,21 @@
 ﻿
 // site.js
 
-function startup()
-{
+(function () {
 
+	var ele = document.getElementById('username');
+	ele.innerHTML = 'Text Here';
 
-var ele = document.getElementById('username');
-ele.innerHTML = 'Text Here';
+	var main = document.getElementById('main');
 
-var main = document.getElementById('main');
+	main.onmouseenter = function () {
+		main.style.backgroundColor = '#888';
+		//main.style = 'background-color: #888';
+	};
 
-main.onmouseenter = function () {
-	main.style.backgroundColor = '#888';
-	//main.style = 'background-color: #888';
-};
+	main.onmouseleave = function () {
+		main.style.backgroundColor = '';
+		//main.style = '';
+	};
 
-main.onmouseleave = function () {
-	main.style.backgroundColor = '';
-	//main.style = '';
-};
-
-}
-
-startup();
+})();
