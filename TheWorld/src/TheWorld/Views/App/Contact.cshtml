@@ -6,8 +6,13 @@
 
 <h2>Contact Me</h2>
 
-<form>
-    <span asp-validation-summary="ModelOnly"></span>
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+
+    @if (ViewBag.UserMessage != null)
+    {
+        <div>@ViewBag.UserMessage</div>
+    }
 
     <label asp-for="Name"></label>
     <input asp-for="Name" />
@@ -25,6 +30,7 @@
         <input type="submit" value="Send Message" />
     </div>
 </form>
+
 
 @section scripts {
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
