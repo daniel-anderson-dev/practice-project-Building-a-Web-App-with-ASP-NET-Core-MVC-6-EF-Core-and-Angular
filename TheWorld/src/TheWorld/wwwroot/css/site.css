@@ -1,4 +1,4 @@
-﻿body {
+﻿/*body {
 	font-family: sans-serif;
 	font-size: 14px;
 	margin: 0;
@@ -11,9 +11,9 @@ label {
 
 input[type=text], input[type=password], textarea {
 	width: 150px;
-}
+}*/
 
-#main {
+/*#main {
 	background: #eee;
 	margin: 0;
 	padding: 4px;
@@ -25,7 +25,7 @@ input[type=text], input[type=password], textarea {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-}
+}*/
 
 #sidebar img {
 	max-width: 50px;
@@ -44,7 +44,7 @@ input[type=text], input[type=password], textarea {
 		}
 
 #sidebar {
-	background: #808080;
+	background-color: darkslateblue;
 	color: yellow;
 	position: fixed;
 	height: 100%;
