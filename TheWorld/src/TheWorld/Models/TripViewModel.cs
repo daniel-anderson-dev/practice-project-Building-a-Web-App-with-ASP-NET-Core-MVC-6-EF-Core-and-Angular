@@ -1,13 +1,13 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace TheWorld.Controllers.Api
+namespace TheWorld.Models
 {
     public class TripViewModel
     {
         [Required]
         [StringLength(100, MinimumLength = 5)]
         public string Name { get; set; }
-        public DateTime Created { get; set; } = DateTime.UtcNow;
+        public DateTime DateCreate { get; set; } = DateTime.UtcNow;
     }
 }
