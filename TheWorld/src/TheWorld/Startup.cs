@@ -46,6 +46,7 @@ namespace TheWorld
             services.AddDbContext<WorldContext>();
             services.AddScoped<IWorldRepository, WorldRepository>();
             services.AddTransient<WorldContextSeedData>();
+            services.AddLogging();
 			services.AddMvc();
         }
 
@@ -53,11 +54,16 @@ namespace TheWorld
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, WorldContextSeedData seeder)
         {
 
-			// "Production" may not be setup at the moment.
-			if (env.IsProduction() == false)
-			{
-				app.UseDeveloperExceptionPage();
-			}
+            // "Production" may not be setup at the moment.
+            if (env.IsProduction() == false)
+            {
+                app.UseDeveloperExceptionPage();
+                loggerFactory.AddDebug(LogLevel.Information);
+            }
+            else
+            {
+                loggerFactory.AddDebug(LogLevel.Error);
+            }
 			
 			app.UseStaticFiles();
 			app.UseMvc(config =>
