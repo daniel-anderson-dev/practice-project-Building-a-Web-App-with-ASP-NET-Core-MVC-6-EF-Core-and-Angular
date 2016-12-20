@@ -10,13 +10,17 @@ namespace TheWorld.Controllers.Api
 {
     public class TripsController: Controller
     {
+        private IWorldRepository _repository;
+
+        public TripsController(IWorldRepository repository)
+        {
+            _repository = repository;
+        }
+
         [HttpGet("api/trips")]
         public IActionResult Get()
         {
-            // Demonstrates the idea of returning an "Action Result"
-            //  in case you don't always return raw json data.
-            if (true) return BadRequest("NOOO");
-            return Ok(new Trip() { Name = "My Trip" });
+            return Ok(_repository.GetAllTrips());
         }
     }
 }
