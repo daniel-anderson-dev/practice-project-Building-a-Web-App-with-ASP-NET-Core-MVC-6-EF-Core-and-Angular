@@ -195,6 +195,7 @@
 -resource:"C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\TheWorlddotnet-compile.deps.json",TheWorld.deps.json
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Program.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Startup.cs"
+"C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Controllers\Api\TripsController.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Controllers\Web\AppController.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Migrations\20161219212714_InitialDatabase.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Migrations\20161219212714_InitialDatabase.Designer.cs"
