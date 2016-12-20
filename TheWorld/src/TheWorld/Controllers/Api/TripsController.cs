@@ -25,9 +25,14 @@ namespace TheWorld.Controllers.Api
         }
 
         [HttpPost("")]
-        public IActionResult Post([FromBody] Trip trip)
+        public IActionResult Post([FromBody] TripViewModel trip)
         {
-            return Ok(trip.Name);
+            if (ModelState.IsValid)
+            {
+                return Created($"api/trips/{trip.Name}", trip);
+            }
+
+            return BadRequest("Bad data");
         }
     }
 }
