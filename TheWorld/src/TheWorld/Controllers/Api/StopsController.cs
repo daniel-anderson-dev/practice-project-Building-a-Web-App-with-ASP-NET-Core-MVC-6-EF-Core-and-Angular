@@ -14,13 +14,15 @@ namespace TheWorld.Controllers.Api
     [Route("/api/trips/{tripName}/stops")]
     public class StopsController : Controller
     {
+        private GeoCoordsService _coordsService;
         private ILogger<StopsController> _logger;
         private IWorldRepository _repository;
 
-        public StopsController(IWorldRepository repository, ILogger<StopsController> logger)
+        public StopsController(IWorldRepository repository, ILogger<StopsController> logger, GeoCoordsService coordsSerivce)
         {
             _repository = repository;
             _logger = logger;
+            _coordsService = coordsSerivce;
         }
 
         [HttpGet("")]
@@ -48,6 +50,18 @@ namespace TheWorld.Controllers.Api
                 {
                     var newStop = Mapper.Map<Stop>(viewModel);
 
+                    var result = await _coordsService.GetCoordsAsync(newStop.Name);
+                    //if (!result.Success)
+                    //{
+                    //    _logger.LogError(result.Message);
+                    //}
+                    //else
+                    //{
+
+                    // Using hard-coded values ... did not find it worthwhile to register for the Bing web service.
+                    newStop.Latitude = -1111;
+                    newStop.Longitude = -2222;
+
                     _repository.AddStop(tripName, newStop);
 
                     if (await _repository.SaveChangesAsync())
@@ -56,6 +70,7 @@ namespace TheWorld.Controllers.Api
                             Mapper.Map<StopViewModel>(newStop));
                     }
 
+                    //}
                 }
             }
             catch (Exception ex)

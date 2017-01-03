@@ -214,5 +214,7 @@
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Models\WorldContextSeedData.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Models\WorldRepository.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Services\DebugMailService.cs"
+"C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Services\GeoCoordsResult.cs"
+"C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Services\GeoCoordsService.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\Services\IMailService.cs"
 "C:\Users\danie\Desktop\Dev\Pluralsight\Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular\TheWorld\src\TheWorld\ViewModels\ContactViewModel.cs"
