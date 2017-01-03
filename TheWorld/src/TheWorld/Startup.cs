@@ -62,6 +62,7 @@ namespace TheWorld
             Mapper.Initialize(config =>
             {
                 config.CreateMap<TripViewModel, Trip>().ReverseMap();
+                config.CreateMap<StopViewModel, Stop>().ReverseMap();
             });
 
             // "Production" may not be setup at the moment.
